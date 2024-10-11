@@ -10,7 +10,7 @@ version = "0.0.1-SNAPSHOT"
 
 java {
     toolchain {
-        languageVersion = JavaLanguageVersion.of(21)
+        languageVersion = JavaLanguageVersion.of(17)
     }
 }
 
@@ -34,6 +34,15 @@ dependencies {
     implementation("org.jetbrains.kotlinx:kotlinx-coroutines-reactor")
     implementation("io.jsonwebtoken:jjwt-api:0.11.5")
     implementation("org.springdoc:springdoc-openapi-starter-webflux-ui:2.5.0")
+
+    implementation("com.google.auth:google-auth-library-oauth2-http:1.19.0")
+
+    implementation("com.google.api-client:google-api-client:2.1.2")
+    implementation("com.google.oauth-client:google-oauth-client-jetty:1.36.0")
+    implementation("com.google.api-client:google-api-client-gson:2.7.0")
+
+
+
     runtimeOnly ("io.jsonwebtoken:jjwt-impl:0.11.5")
     runtimeOnly ("io.jsonwebtoken:jjwt-jackson:0.11.5")
 
